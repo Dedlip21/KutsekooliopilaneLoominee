@@ -42,6 +42,8 @@ namespace KutsekooliopilaneLoomine
         public abstract double arvutaSissetulek(double maksuvaba, double tulumaks);
 
         public abstract string kooliKoht(string koht);
+        public abstract List<string> Return_List();
+
 
         /*public int arvutaSynnipaev()
         {

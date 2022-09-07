@@ -1,6 +1,7 @@
 ﻿using KutsekooliopilaneLoomine;
 using System.Numerics;
 using System.Runtime.Intrinsics.Arm;
+using static KutsekooliopilaneLoomine.WriteList;
 
 Console.WriteLine("Sisentage isik. 1 - Tootajad, 2 - Opilased, 3 - Kutsekooliõpilane");
 int isikud = Convert.ToInt32(Console.ReadLine());
@@ -123,5 +124,17 @@ else if(isikud == 3)
     else if (Valik == 2)
     {
         Console.WriteLine(kutsekooliõpilane.kooliKoht("---"));
+    }
+
+    Console.WriteLine("Kas te tahate kirjuta see õpilane andmebaasi? Yah - 1 või Ei - 2");
+    int andmebaasValik = Convert.ToInt32(Console.ReadLine());
+
+    if (andmebaasValik == 1)
+    {
+        WriteToListHamster(kutsekooliõpilane);
+    }
+    else if (andmebaasValik == 2)
+    {
+        Console.WriteLine("Ok, headaega!");
     }
 }

@@ -63,5 +63,25 @@ namespace KutsekooliopilaneLoomine
 
 
         public void muudaNimi(string uusNimi) { nimi = uusNimi; }
+
+
+
+
+
+        public override List<string> Return_List()
+        {
+
+            var End = new List<string>();
+            /*End.Add("\n----------------------------\nKoer");
+            End.Add("Tõug on " + isikSugu.ToString());
+            End.Add("varv on " + nimi.ToString());
+            End.Add("nimi on " + synniAasta.ToString());
+            End.Add("sugu on " + oppeasutus.ToString());
+            End.Add("kaal on " + eriala.ToString());
+            End.Add("kaal on " + toetus.ToString());
+            //End.Add("kaal on " + eriala.ToString());
+            End.Add("vanus on " + kursus.ToString() + "\n----------------------------");*/
+            return (End);
+        }
     }
 }
